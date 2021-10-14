@@ -82,14 +82,15 @@ nav a{
   z-index: 1;
 
   /* Requirement 3a code here*/
-  position: relative;
+  position: absolute;
   top: -40px;
 
 }
 
 /* Requirement 3b code here*/
 .skip a:focus {
-  position: inherit;
+  position: absolute;
+  top: 0px;
 
 }
 
