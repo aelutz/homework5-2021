@@ -1,5 +1,4 @@
 /***** STARTER CODE - DO NOT CHANGE *****/
-/*NEED TO DO STEPS 3 AND 9*/
 
 
 html{
@@ -83,10 +82,17 @@ nav a{
   z-index: 1;
 
   /* Requirement 3a code here*/
+  position: relative;
+  top: -40px;
 
 }
 
 /* Requirement 3b code here*/
+.skip a:focus {
+  position: relative;
+  top: 0px;
+
+}
 
 
 /* Requirement 4 code here*/
@@ -185,6 +191,7 @@ header{
   padding: 30px;
 
   /* Your code here */
+  align-self: center;
 
 
 }
@@ -192,45 +199,56 @@ header{
 @media screen and (min-width: 800px){
   nav{
     padding: 30px 0;
-
     /* Your code here */
+    text-align: right;
   }
 
   .container{
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: repeat(4, 400px);
    
   }
 
   
 
   .about-image{
+    grid-column: 2 / span 2;
+
   
   }
 
   .about{
+    grid-column: 3 / span 2;
     
   }
 
   .method-image{
+    grid-column: 3 / span 2;
     
   }
 
   .method{
+    grid-column: 2 / span 2;
    
   }
 
   .clients-image{
+    grid-column: 2 / span 2;
     
   }
 
   .clients{
+    grid-column: 3 / span 2;
     
   }
 
   .contact-image{
+    grid-column: 3 / span 2;
     
   }
 
   .contact{
+    grid-column: 2 / span 2;
     
   }
 
